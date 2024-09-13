@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Futuristic Portfolio</h1>
+            <p>I'm Parth Dubey And I am bsc IT student.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content">
+            <img src="p1.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="bio">
+                <h2>About Me</h2>
+                <p>Now I'm studying in SYIT.
+                    My self Parth Dubey.
+                  
+                    I have done some courses like HTML, C, C++ and PYTHON.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects"  class="projects" >
+        <h2>My Projects</h2>
+        <div class="project" >
+            <a href="Project1.html">+++++</a>
+            <h3>Project 1</h3>
+            <p>[An interactive data visualization tool that uses D3.js to create dynamic and responsive charts. The project includes features like real-time data updates and custom user interactions, showcasing advanced web technologies and data handling.]</p>
+        </div>
+        <div class="project">
+            <a href="Project2.html">+++++</a>
+            <h3>Project 2</h3>
+            <p>[An online examination system for secure and seamless online exams. A robust online testing platform for conducting remote online examinations.]</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 PARTH DUBEY. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+<script type="module" src="script.js"></script>
+</html>
